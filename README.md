@@ -1,10 +1,10 @@
 # Matrix multiplication using multi threading
 
-Presenting 3 different approaches for performing the matrix multiplication operation while utlizing the OS threads, observing the performance enhancement in each of the following cases:
+Presenting 3 different approaches for performing the matrix multiplication operation while utilizing the OS threads, observing the performance enhancement in each of the following cases:
 
 * Spawning a single thread per the whole result matrix.
-* Spawning a single thread per row of the whole result matrix.
-* Spawning a single thread per element of the whole result matrix.
+* Spawning a single thread per row of the result matrix.
+* Spawning a single thread per element of the result matrix.
 
 ---
 
