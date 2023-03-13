@@ -1,0 +1,11 @@
+# ninja log v5
+45	73	1678734563537678543	src	ce541efef1a8521d
+1	39	1678734371396571663	CMakeFiles/src.dir/main.c.o	11a96a291f866222
+1	118	1678733292787462129	CMakeFiles/src.dir/matrix_utilities.c.o	481fe67c08e42376
+1	45	1678734563510273620	CMakeFiles/src.dir/matrix_scanner.c.o	e6cbf52099ce8bf9
+0	53	1678734965201768517	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/bin/src	b653feedc45d13ac
+0	24	1678735014765942165	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	6cc3a68023d036e4
+1	37	1678735244698730754	CMakeFiles/src.dir/main.c.o	11a96a291f866222
+1	37	1678735244698730754	CMakeFiles/src.dir/matrix_utilities.c.o	481fe67c08e42376
+2	39	1678735244698730754	CMakeFiles/src.dir/matrix_scanner.c.o	e6cbf52099ce8bf9
+39	62	1678735244722730591	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	6cc3a68023d036e4
