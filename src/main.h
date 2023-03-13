@@ -18,9 +18,9 @@
 #include "matrix_utilities.h"
 
 // Global definitions
-#define DEFAULT_MATA "a.txt"
-#define DEFAULT_MATB "b.txt"
-#define DEFAULT_MATC "c.txt"
+#define DEFAULT_MATA "a"
+#define DEFAULT_MATB "b"
+#define DEFAULT_MATC "c"
 #define MAX_LINE_LEN 200   // the 1st line in the text file
 #define MAX_PATH_LEN 300
 #define MATRIX_A 1
@@ -34,5 +34,9 @@ extern int** matC;
 extern int matSizes[6];
 
 // Functions prototype
+int main(int argc, char* argv[]);
+void scanInputMatrices(char* aPath, char* bPath);
+void check_and_initialize(int argc, char** argv);
+void prepare_environment(int argc, char* argv[]);
 
 #endif //SRC_MAIN_H

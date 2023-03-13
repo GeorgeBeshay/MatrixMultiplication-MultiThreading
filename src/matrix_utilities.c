@@ -42,3 +42,12 @@ void display_matrix(int matrixIdentifier){
         printf("\n");
     }
 }
+
+int** malloc_for_2D_arrOfInts(int rows, int cols){
+    int** matrix;
+    matrix = (int**) malloc(rows * sizeof(int*));
+    for(int i = 0 ; i < rows ; i++){
+        matrix[i] = (int*) malloc(cols * sizeof(int));
+    }
+    return matrix;
+}

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "src"
+			"path" : "/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 8,
 				"parent" : 0
 			}
 		]

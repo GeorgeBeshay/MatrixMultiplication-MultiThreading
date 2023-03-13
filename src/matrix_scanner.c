@@ -12,8 +12,9 @@ void scan_matrices(char* fileName, int matrixIdentifier){
     // ------------------- Separator -------------------
     char currentDirectory[MAX_PATH_LEN];
     getcwd(currentDirectory, MAX_PATH_LEN);
-    strcat(currentDirectory, "/../");
+    strcat(currentDirectory, "/");
     strcat(currentDirectory, fileName);
+    strcat(currentDirectory, ".txt");
     // ------------------- Separator -------------------
     FILE* matrixFile = fopen(currentDirectory, "r");
     char descriptionLine[MAX_LINE_LEN];
@@ -43,17 +44,14 @@ void scan_matrices(char* fileName, int matrixIdentifier){
  */
 int** realiseMatrix(int matrixIdentifier, int* dimensions){
     // ------------------- Separator -------------------
-    int **selectedMatrix;
-    selectedMatrix = (int**) malloc(dimensions[0] * sizeof(int*));
-    for(int i = 0 ; i < dimensions[0] ; i++){
-        selectedMatrix[i] = (int*) malloc(dimensions[1] * sizeof(int));
-    }
+    int** selectedMatrix = malloc_for_2D_arrOfInts(dimensions[0], dimensions[1]);
     // ------------------- Separator -------------------
     switch (matrixIdentifier) {
         case(MATRIX_A):
         {
             matSizes[0] = dimensions[0];
             matSizes[1] = dimensions[1];
+            matSizes[4] = dimensions[0];
             matA = selectedMatrix;
             break;
         }
@@ -61,15 +59,8 @@ int** realiseMatrix(int matrixIdentifier, int* dimensions){
         {
             matSizes[2] = dimensions[0];
             matSizes[3] = dimensions[1];
-            matB = selectedMatrix;
-            break;
-        }
-        case(MATRIX_C):
-        {
-
-            matSizes[4] = dimensions[0];
             matSizes[5] = dimensions[1];
-            matC = selectedMatrix;
+            matB = selectedMatrix;
             break;
         }
         default:
@@ -88,3 +79,4 @@ int** realiseMatrix(int matrixIdentifier, int* dimensions){
 void getDimensions( int *dimensions, int len, char descriptiveLine[len]){
     sscanf(descriptiveLine, "row=%d col=%d", &dimensions[0], &dimensions[1]);
 }
+
