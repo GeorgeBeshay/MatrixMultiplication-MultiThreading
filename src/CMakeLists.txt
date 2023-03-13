@@ -3,4 +3,4 @@ project(src C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(src programDriver.c programDriver.h)
+add_executable(src main.c main.h matrix_utilities.c matrix_utilities.h matrix_scanner.c matrix_scanner.h)
