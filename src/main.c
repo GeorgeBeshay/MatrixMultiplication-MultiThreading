@@ -11,7 +11,28 @@ int matSizes[6];
 
 
 int main(int argc, char* argv[]){
+    system("clear");
+    // ---------------------- Separator ----------------------
     prepare_environment(argc, argv);
+    pthread_t firstMethodThread, secondMethodThread, thirdMethodThread;
+    // ---------------------- Separator ----------------------
+    pthread_create(&firstMethodThread, NULL, first_method, (void*) argv[3]);
+    pthread_join(firstMethodThread, NULL);
+    // ---------------------- Separator ----------------------
+    refreshStoredResultMatrix();
+    // ---------------------- Separator ----------------------
+    pthread_create(&secondMethodThread, NULL, second_method, (void*) argv[3]);
+    pthread_join(secondMethodThread, NULL);
+    // ---------------------- Separator ----------------------
+    refreshStoredResultMatrix();
+    // ---------------------- Separator ----------------------
+    pthread_create(&thirdMethodThread, NULL, third_method, (void*) argv[3]);
+    pthread_join(thirdMethodThread, NULL);
+    // ---------------------- Separator ----------------------
+    free(matA);
+    free(matB);
+    free(matC);
+    // ---------------------- Separator ----------------------
     return 0;
 }
 
@@ -46,4 +67,9 @@ void check_and_initialize(int argc, char** argv){
 void scanInputMatrices(char* aPath, char* bPath){
     scan_matrices(aPath, MATRIX_A);
     scan_matrices(bPath, MATRIX_B);
+}
+
+void refreshStoredResultMatrix(){
+    free(matC);
+    matC = malloc_for_2D_arrOfInts(matSizes[4], matSizes[5]);
 }

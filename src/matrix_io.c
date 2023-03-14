@@ -80,7 +80,7 @@ void getDimensions( int *dimensions, int len, char descriptiveLine[len]){
     sscanf(descriptiveLine, "row=%d col=%d", &dimensions[0], &dimensions[1]);
 }
 
-void write_out_matrix(char* fileName, char* methodName, double timeTaken){
+void write_out_matrix(struct multiplication_approach_data* approachData, char* fileName){
     // ------------------- Separator -------------------
     char currentDirectory[MAX_PATH_LEN];
     getcwd(currentDirectory, MAX_PATH_LEN);
@@ -89,11 +89,12 @@ void write_out_matrix(char* fileName, char* methodName, double timeTaken){
     strcat(currentDirectory, ".txt");
     // ------------------- Separator -------------------
     FILE* matrixFile = fopen(currentDirectory, "w");
-    fprintf(matrixFile, "Method: %s\nrow=%d col=%d\n", methodName, matSizes[4], matSizes[5]);
-    fprintf(matrixFile, "Time taken in seconds: %f\n", timeTaken);
+    fprintf(matrixFile, "Method: %s\nrow=%d col=%d\n", approachData->method_name, matSizes[4], matSizes[5]);
+    fprintf(matrixFile, "Time taken in micro seconds: %ld\n", approachData->stop.tv_usec - approachData->start.tv_usec);
+    fprintf(matrixFile, "Total number of threads spawned: %d\n", approachData->threads_count);
     for(int i = 0 ; i < matSizes[4] ; i++){
         for(int j = 0 ; j < matSizes[5] ; j++){
-            fprintf(matrixFile, "%d\t", matC[i][j]);
+            fprintf(matrixFile, "%d \t", matC[i][j]);
         }
         fprintf(matrixFile, "\n");
     }

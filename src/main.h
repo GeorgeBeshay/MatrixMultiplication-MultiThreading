@@ -12,10 +12,13 @@
 #include <time.h>
 #include <unistd.h>
 #include <malloc.h>
+#include <pthread.h>
+#include <sys/time.h>
 
 // Including other user defined modules
 #include "matrix_io.h"
 #include "matrix_utilities.h"
+#include "different_approaches.h"
 
 // Global definitions
 #define DEFAULT_MATA "a"
@@ -38,5 +41,6 @@ int main(int argc, char* argv[]);
 void scanInputMatrices(char* aPath, char* bPath);
 void check_and_initialize(int argc, char** argv);
 void prepare_environment(int argc, char* argv[]);
+void refreshStoredResultMatrix();
 
 #endif //SRC_MAIN_H
