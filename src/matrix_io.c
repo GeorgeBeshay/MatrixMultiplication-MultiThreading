@@ -80,7 +80,7 @@ void getDimensions( int *dimensions, int len, char descriptiveLine[len]){
     sscanf(descriptiveLine, "row=%d col=%d", &dimensions[0], &dimensions[1]);
 }
 
-void write_out_matrix(struct multiplication_approach_data* approachData, char* fileName){
+void write_out_matrix(multiplication_approach_data* approachData, char* fileName){
     // ------------------- Separator -------------------
     char currentDirectory[MAX_PATH_LEN];
     getcwd(currentDirectory, MAX_PATH_LEN);

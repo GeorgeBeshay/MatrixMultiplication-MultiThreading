@@ -5,6 +5,7 @@
 #ifndef SRC_MAIN_H
 #define SRC_MAIN_H
 
+
 // Including required system related modules
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,6 +15,12 @@
 #include <malloc.h>
 #include <pthread.h>
 #include <sys/time.h>
+
+typedef struct {
+    int threads_count;
+    char* method_name;
+    struct timeval stop, start;
+} multiplication_approach_data;
 
 // Including other user defined modules
 #include "matrix_io.h"
