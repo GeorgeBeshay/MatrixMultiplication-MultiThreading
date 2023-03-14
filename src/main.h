@@ -22,6 +22,11 @@ typedef struct {
     struct timeval stop, start;
 } multiplication_approach_data;
 
+typedef struct {
+    int rowNum;
+    int colNum;
+} matrix_element_location;
+
 // Including other user defined modules
 #include "matrix_io.h"
 #include "matrix_utilities.h"

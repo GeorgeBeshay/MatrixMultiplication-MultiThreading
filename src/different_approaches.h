@@ -7,11 +7,6 @@
 
 #include "main.h"
 
-struct matrix_element_location {
-    int rowNum;
-    int colNum;
-};
-
 multiplication_approach_data* malloc_for_threadData(char* methodName);
 void* first_method(void* outputFileName);
 void* second_method(void* outputFileName);
