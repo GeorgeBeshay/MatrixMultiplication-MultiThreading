@@ -2,7 +2,7 @@
 // Created by george on 3/12/23.
 //
 
-#include "matrix_scanner.h"
+#include "matrix_io.h"
 
 /*
  * In the following function, a procedure should be followed
@@ -12,7 +12,7 @@ void scan_matrices(char* fileName, int matrixIdentifier){
     // ------------------- Separator -------------------
     char currentDirectory[MAX_PATH_LEN];
     getcwd(currentDirectory, MAX_PATH_LEN);
-    strcat(currentDirectory, "/");
+    strcat(currentDirectory, "/Data/");
     strcat(currentDirectory, fileName);
     strcat(currentDirectory, ".txt");
     // ------------------- Separator -------------------
@@ -80,3 +80,23 @@ void getDimensions( int *dimensions, int len, char descriptiveLine[len]){
     sscanf(descriptiveLine, "row=%d col=%d", &dimensions[0], &dimensions[1]);
 }
 
+void write_out_matrix(char* fileName, double timeTaken){
+    // ------------------- Separator -------------------
+    char currentDirectory[MAX_PATH_LEN];
+    getcwd(currentDirectory, MAX_PATH_LEN);
+    strcat(currentDirectory, "/Data/");
+    strcat(currentDirectory, fileName);
+    strcat(currentDirectory, ".txt");
+    // ------------------- Separator -------------------
+    FILE* matrixFile = fopen(currentDirectory, "w");
+    for(int i = 0 ; i < matSizes[4] ; i++){
+        for(int j = 0 ; j < matSizes[5] ; j++){
+            fprintf(matrixFile, "%d\t", matC[i][j]);
+        }
+        fprintf(matrixFile, "\n");
+    }
+    fprintf(matrixFile, "Time taken in seconds: %f\n", timeTaken);
+    // ------------------- Separator -------------------
+    fclose(matrixFile);
+    // ------------------- Separator -------------------
+}

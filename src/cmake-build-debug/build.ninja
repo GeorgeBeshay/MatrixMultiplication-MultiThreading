@@ -61,8 +61,8 @@ build CMakeFiles/src.dir/matrix_utilities.c.o: C_COMPILER__src_Debug /home/georg
   OBJECT_DIR = CMakeFiles/src.dir
   OBJECT_FILE_DIR = CMakeFiles/src.dir
 
-build CMakeFiles/src.dir/matrix_scanner.c.o: C_COMPILER__src_Debug /home/george/College/CSED$ Level$ 2/Spring$ Semester/CSE$ x61$ -$ Operating$ Systems/Labs/Lab$ #02/MatrixMultiplication-MultiThreading/src/matrix_scanner.c || cmake_object_order_depends_target_src
-  DEP_FILE = CMakeFiles/src.dir/matrix_scanner.c.o.d
+build CMakeFiles/src.dir/matrix_io.c.o: C_COMPILER__src_Debug /home/george/College/CSED$ Level$ 2/Spring$ Semester/CSE$ x61$ -$ Operating$ Systems/Labs/Lab$ #02/MatrixMultiplication-MultiThreading/src/matrix_io.c || cmake_object_order_depends_target_src
+  DEP_FILE = CMakeFiles/src.dir/matrix_io.c.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu11
   OBJECT_DIR = CMakeFiles/src.dir
   OBJECT_FILE_DIR = CMakeFiles/src.dir
@@ -75,7 +75,7 @@ build CMakeFiles/src.dir/matrix_scanner.c.o: C_COMPILER__src_Debug /home/george/
 #############################################
 # Link the executable /home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src
 
-build /home/george/College/CSED$ Level$ 2/Spring$ Semester/CSE$ x61$ -$ Operating$ Systems/Labs/Lab$ #02/MatrixMultiplication-MultiThreading/src/src: C_EXECUTABLE_LINKER__src_Debug CMakeFiles/src.dir/main.c.o CMakeFiles/src.dir/matrix_utilities.c.o CMakeFiles/src.dir/matrix_scanner.c.o
+build /home/george/College/CSED$ Level$ 2/Spring$ Semester/CSE$ x61$ -$ Operating$ Systems/Labs/Lab$ #02/MatrixMultiplication-MultiThreading/src/src: C_EXECUTABLE_LINKER__src_Debug CMakeFiles/src.dir/main.c.o CMakeFiles/src.dir/matrix_utilities.c.o CMakeFiles/src.dir/matrix_io.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/src.dir
   POST_BUILD = :

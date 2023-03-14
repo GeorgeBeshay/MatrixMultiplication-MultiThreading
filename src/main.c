@@ -12,13 +12,15 @@ int matSizes[6];
 
 int main(int argc, char* argv[]){
     prepare_environment(argc, argv);
-    display_matrix(MATRIX_A);display_matrix(MATRIX_B);
     return 0;
 }
 
+/*
+ * Function Checks the arguments, scan the input matrices
+ * and then set the output matrix dimensions.
+ */
 void prepare_environment(int argc, char* argv[]){
     check_and_initialize(argc, argv);
-//    printf("%d - %s - %s - %s\n", argc, argv[1], argv[2], argv[3]);
     scanInputMatrices(argv[1], argv[2]);
     matC = malloc_for_2D_arrOfInts(matSizes[4], matSizes[5]);
 }

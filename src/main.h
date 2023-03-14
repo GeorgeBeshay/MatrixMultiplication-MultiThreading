@@ -14,7 +14,7 @@
 #include <malloc.h>
 
 // Including other user defined modules
-#include "matrix_scanner.h"
+#include "matrix_io.h"
 #include "matrix_utilities.h"
 
 // Global definitions
