@@ -80,7 +80,7 @@ void getDimensions( int *dimensions, int len, char descriptiveLine[len]){
     sscanf(descriptiveLine, "row=%d col=%d", &dimensions[0], &dimensions[1]);
 }
 
-void write_out_matrix(char* fileName, double timeTaken){
+void write_out_matrix(char* fileName, char* methodName, double timeTaken){
     // ------------------- Separator -------------------
     char currentDirectory[MAX_PATH_LEN];
     getcwd(currentDirectory, MAX_PATH_LEN);
@@ -89,13 +89,14 @@ void write_out_matrix(char* fileName, double timeTaken){
     strcat(currentDirectory, ".txt");
     // ------------------- Separator -------------------
     FILE* matrixFile = fopen(currentDirectory, "w");
+    fprintf(matrixFile, "Method: %s\nrow=%d col=%d\n", methodName, matSizes[4], matSizes[5]);
+    fprintf(matrixFile, "Time taken in seconds: %f\n", timeTaken);
     for(int i = 0 ; i < matSizes[4] ; i++){
         for(int j = 0 ; j < matSizes[5] ; j++){
             fprintf(matrixFile, "%d\t", matC[i][j]);
         }
         fprintf(matrixFile, "\n");
     }
-    fprintf(matrixFile, "Time taken in seconds: %f\n", timeTaken);
     // ------------------- Separator -------------------
     fclose(matrixFile);
     // ------------------- Separator -------------------

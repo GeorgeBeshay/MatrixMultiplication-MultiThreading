@@ -10,6 +10,6 @@
 void scan_matrices(char* fileName, int matrixIdentifier);
 void getDimensions( int *dimensions, int len, char descriptiveLine[len]);
 int** realiseMatrix(int matrixIdentifier, int* dimensions);
-void write_out_matrix(char* fileName, double timeTaken);
+void write_out_matrix(char* fileName, char* methodName, double timeTaken);
 
 #endif //SRC_MATRIX_IO_H
