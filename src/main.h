@@ -5,6 +5,7 @@
 #ifndef SRC_MAIN_H
 #define SRC_MAIN_H
 
+
 // Including required system related modules
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,10 +13,24 @@
 #include <time.h>
 #include <unistd.h>
 #include <malloc.h>
+#include <pthread.h>
+#include <sys/time.h>
+
+typedef struct {
+    int threads_count;
+    char* method_name;
+    struct timeval stop, start;
+} multiplication_approach_data;
+
+typedef struct {
+    int rowNum;
+    int colNum;
+} matrix_element_location;
 
 // Including other user defined modules
 #include "matrix_io.h"
 #include "matrix_utilities.h"
+#include "different_approaches.h"
 
 // Global definitions
 #define DEFAULT_MATA "a"
@@ -38,5 +53,6 @@ int main(int argc, char* argv[]);
 void scanInputMatrices(char* aPath, char* bPath);
 void check_and_initialize(int argc, char** argv);
 void prepare_environment(int argc, char* argv[]);
+void refreshStoredResultMatrix();
 
 #endif //SRC_MAIN_H
