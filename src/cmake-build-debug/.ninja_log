@@ -1,63 +1,7 @@
 # ninja log v5
 45	73	1678734563537678543	src	ce541efef1a8521d
-0	1827	1678770713473595197	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-1	542	1678737144184241753	CMakeFiles/src.dir/matrix_utilities.c.o	481fe67c08e42376
-1873	2121	1678770713765603614	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	6cc3a68023d036e4
-1	1873	1678770713473595197	CMakeFiles/src.dir/matrix_scanner.c.o	e6cbf52099ce8bf9
-0	38	1678770744354485285	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-1	41	1678770744358485399	CMakeFiles/src.dir/matrix_io.c.o	ab512a7b7e3bfa72
-0	55	1678770744370485745	CMakeFiles/src.dir/matrix_utilities.c.o	481fe67c08e42376
-55	79	1678770744394486437	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-1	1536	1678771707418244673	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-33	1536	1678771707418244673	CMakeFiles/src.dir/matrix_io.c.o	ab512a7b7e3bfa72
-1536	1774	1678771707654251475	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-1	51	1678771722426677283	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-51	77	1678771722450677975	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-1	55	1678771731702944666	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-55	82	1678771731726945358	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-1	233	1678771765912168929	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-233	259	1678771765936145600	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-0	101	1678771836816789283	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-101	189	1678771836904826347	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-53	3799	1678772381763344884	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-54	3800	1678772381763344884	CMakeFiles/src.dir/matrix_io.c.o	ab512a7b7e3bfa72
-3800	5078	1678772383043324319	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-0	43	1678772428209728701	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-44	69	1678772428237727299	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-0	84	1678772441789006917	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-84	112	1678772441817005349	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-1	197	1678772449700550660	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-197	226	1678772449728549007	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-0	38	1678772463331713263	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-38	64	1678772463359711483	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-1	50	1678772470911223546	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-50	74	1678772470935221974	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-0	44	1678772477475115123	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-45	69	1678772477499118524	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-1	39	1678772484544078940	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-39	62	1678772484568082086	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-1	38	1678772489020651082	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-38	63	1678772489044654055	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-90	1421	1678772770653216425	CMakeFiles/src.dir/matrix_io.c.o	ab512a7b7e3bfa72
-39	1421	1678772770653216425	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-89	1422	1678772770653216425	CMakeFiles/src.dir/matrix_utilities.c.o	481fe67c08e42376
-1422	1820	1678772771049201776	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-1	42	1678772785240660695	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-43	67	1678772785264659754	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-0	58	1678772791028431790	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-58	83	1678772791056430670	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-1	42	1678772801472007558	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-43	65	1678772801496006567	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-1	406	1678772808691706403	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-406	432	1678772808715705393	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-1	113	1678772817523329811	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-113	222	1678772817631325154	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-1	46	1678772822603109341	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-46	68	1678772822623108468	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-1	482	1678772979403378973	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-1	482	1678772979403378973	CMakeFiles/src.dir/matrix_utilities.c.o	481fe67c08e42376
-48	603	1678772979527372395	CMakeFiles/src.dir/matrix_io.c.o	ab512a7b7e3bfa72
-603	632	1678772979555370909	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
-1	37	1678773062571439711	CMakeFiles/src.dir/main.c.o	11a96a291f866222
 1	42	1678773062575439331	CMakeFiles/src.dir/matrix_io.c.o	ab512a7b7e3bfa72
+1	37	1678773062571439711	CMakeFiles/src.dir/main.c.o	11a96a291f866222
+1	482	1678772979403378973	CMakeFiles/src.dir/matrix_utilities.c.o	481fe67c08e42376
 42	66	1678773062599437050	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	68973ba1c86ddcf4
+1	1873	1678770713473595197	CMakeFiles/src.dir/matrix_scanner.c.o	e6cbf52099ce8bf9
