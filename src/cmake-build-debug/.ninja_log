@@ -1,14 +1,14 @@
 # ninja log v5
 2	57	1678788473703374929	CMakeFiles/src.dir/threads.c.o	11a803e8ca63f7d3
 45	73	1678734563537678543	src	ce541efef1a8521d
-6	63	1678798980356315890	CMakeFiles/src.dir/matrix_io.c.o	ab512a7b7e3bfa72
-0	56	1678798980348315720	CMakeFiles/src.dir/main.c.o	11a96a291f866222
-1	44	1678798980336315464	CMakeFiles/src.dir/matrix_utilities.c.o	481fe67c08e42376
-63	86	1678798980376316316	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	9c03829aa0cb01d1
-1	1873	1678770713473595197	CMakeFiles/src.dir/matrix_scanner.c.o	e6cbf52099ce8bf9
-7	63	1678798980356315890	CMakeFiles/src.dir/different_approaches.c.o	d08921c748c2064e
-1	41	1678800002557843274	CMakeFiles/src.dir/matrix_utilities.c.o	481fe67c08e42376
-1	41	1678800002557843274	CMakeFiles/src.dir/main.c.o	11a96a291f866222
 2	46	1678800002561843357	CMakeFiles/src.dir/matrix_io.c.o	ab512a7b7e3bfa72
-2	57	1678800002573843608	CMakeFiles/src.dir/different_approaches.c.o	d08921c748c2064e
+1	41	1678800002557843274	CMakeFiles/src.dir/main.c.o	11a96a291f866222
+1	41	1678800002557843274	CMakeFiles/src.dir/matrix_utilities.c.o	481fe67c08e42376
 57	80	1678800002593844027	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	9c03829aa0cb01d1
+1	1873	1678770713473595197	CMakeFiles/src.dir/matrix_scanner.c.o	e6cbf52099ce8bf9
+2	57	1678800002573843608	CMakeFiles/src.dir/different_approaches.c.o	d08921c748c2064e
+1	803	1678800646909300937	CMakeFiles/src.dir/different_approaches.c.o	d08921c748c2064e
+0	803	1678800646909300937	CMakeFiles/src.dir/main.c.o	11a96a291f866222
+1	804	1678800646909300937	CMakeFiles/src.dir/matrix_utilities.c.o	481fe67c08e42376
+1	804	1678800646909300937	CMakeFiles/src.dir/matrix_io.c.o	ab512a7b7e3bfa72
+804	1226	1678800647333308939	/home/george/College/CSED Level 2/Spring Semester/CSE x61 - Operating Systems/Labs/Lab #02/MatrixMultiplication-MultiThreading/src/src	9c03829aa0cb01d1
