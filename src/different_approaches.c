@@ -102,7 +102,7 @@ void* third_method_calcElem(void* elemStruct){
 }
 
 multiplication_approach_data* malloc_for_ApproachData(char* methodName){
-    multiplication_approach_data* threadData = (multiplication_approach_data*) malloc(sizeof(multiplication_approach_data ));
+    multiplication_approach_data* threadData = (multiplication_approach_data*) malloc(sizeof(multiplication_approach_data));
     threadData->method_name = (char*) malloc(100 * sizeof(char));
     strcpy(threadData->method_name, methodName);
     threadData->threads_count = 1;
