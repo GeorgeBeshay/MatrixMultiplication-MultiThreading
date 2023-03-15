@@ -9,5 +9,6 @@
 
 void display_matrix(int matrixIdentifier);
 int** malloc_for_2D_arrOfInts(int rows, int cols);
+void printSeparator();
 
 #endif //SRC_MATRIX_UTILITIES_H

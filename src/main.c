@@ -16,18 +16,24 @@ int main(int argc, char* argv[]){
     prepare_environment(argc, argv);
     pthread_t firstMethodThread, secondMethodThread, thirdMethodThread;
     // ---------------------- Separator ----------------------
+    printSeparator();
     pthread_create(&firstMethodThread, NULL, first_method, (void*) argv[3]);
     pthread_join(firstMethodThread, NULL);
-    // ---------------------- Separator ----------------------
     refreshStoredResultMatrix();
     // ---------------------- Separator ----------------------
+    printSeparator();
     pthread_create(&secondMethodThread, NULL, second_method, (void*) argv[3]);
     pthread_join(secondMethodThread, NULL);
-    // ---------------------- Separator ----------------------
     refreshStoredResultMatrix();
     // ---------------------- Separator ----------------------
+    printSeparator();
     pthread_create(&thirdMethodThread, NULL, third_method, (void*) argv[3]);
     pthread_join(thirdMethodThread, NULL);
+    // ---------------------- Separator ----------------------
+    printSeparator();
+    display_matrix(MATRIX_A);
+    display_matrix(MATRIX_B);
+    display_matrix(MATRIX_C);
     // ---------------------- Separator ----------------------
     free(matA);
     free(matB);

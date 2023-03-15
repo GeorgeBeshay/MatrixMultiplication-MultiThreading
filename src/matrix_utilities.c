@@ -13,6 +13,7 @@ void display_matrix(int matrixIdentifier){
             dimensions[0] = matSizes[0];
             dimensions[1] = matSizes[1];
             selectedMatrix = matA;
+            printf("Input Matrix 1:\n");
             break;
         }
         case(MATRIX_B):
@@ -20,6 +21,7 @@ void display_matrix(int matrixIdentifier){
             dimensions[0] = matSizes[2];
             dimensions[1] = matSizes[3];
             selectedMatrix = matB;
+            printf("Input Matrix 2:\n");
             break;
         }
         case(MATRIX_C):
@@ -28,6 +30,7 @@ void display_matrix(int matrixIdentifier){
             dimensions[0] = matSizes[4];
             dimensions[1] = matSizes[5];
             selectedMatrix = matC;
+            printf("Output Matrix:\n");
             break;
         }
         default:
@@ -41,6 +44,7 @@ void display_matrix(int matrixIdentifier){
         }
         printf("\n");
     }
+    printf("\n");
 }
 
 int** malloc_for_2D_arrOfInts(int rows, int cols){
@@ -50,4 +54,8 @@ int** malloc_for_2D_arrOfInts(int rows, int cols){
         matrix[i] = (int*) malloc(cols * sizeof(int));
     }
     return matrix;
+}
+
+void printSeparator(){
+    printf("------------------- Separator -------------------\n");
 }
