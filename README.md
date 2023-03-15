@@ -40,10 +40,10 @@ Steps to install and run this project on your local machine.
 `https://github.com/GeorgeBeshay/MatrixMultiplication-MultiThreading/archive/refs/heads/main.zip`
 * Open the src directory using you favourite IDE.
 * Place the test cases on the pre-defined format of the matrix input, follow the CLI procedure to run the application that can be found in the problem statement repository.
-* Open the src directory from the terminal run the following commands:
- * `make`
- * `./matMultp a b c`
- * replace a, b and c with the input and output matices files.
+* open the src directory from the terminal run the following commands:
+    * `make`
+    * `./matMultp a b c`
+    * replace a, b and c with the input and output matices files.
 
 ---
 
@@ -57,6 +57,6 @@ Steps to install and run this project on your local machine.
 
 ## Problem Statement
 - For more details about the lab and the problem, kindly refer to the lab problem definition repository that can be found at the course TA github.
- - [Repo Link](https://github.com/SajedHassan/Operating-Systems/tree/master/Labs/lab2)
+    - [Repo Link](https://github.com/SajedHassan/Operating-Systems/tree/master/Labs/lab2)
 
 ---
