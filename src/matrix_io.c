@@ -12,7 +12,7 @@ void scan_matrices(char* fileName, int matrixIdentifier){
     // ------------------- Separator -------------------
     char currentDirectory[MAX_PATH_LEN];
     getcwd(currentDirectory, MAX_PATH_LEN);
-    strcat(currentDirectory, "/Data/");
+    strcat(currentDirectory, "/IO/");
     strcat(currentDirectory, fileName);
     strcat(currentDirectory, ".txt");
     // ------------------- Separator -------------------
@@ -84,7 +84,7 @@ void write_out_matrix(multiplication_approach_data* approachData, char* fileName
     // ------------------- Separator -------------------
     char currentDirectory[MAX_PATH_LEN];
     getcwd(currentDirectory, MAX_PATH_LEN);
-    strcat(currentDirectory, "/Data/");
+    strcat(currentDirectory, "/IO/");
     strcat(currentDirectory, fileName);
     strcat(currentDirectory, ".txt");
     // ------------------- Separator -------------------

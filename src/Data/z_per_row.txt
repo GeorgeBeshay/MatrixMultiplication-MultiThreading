@@ -1,6 +1,0 @@
-Method: A Thread per row.
-row=2 col=4
-Time taken in micro seconds: 232
-Total number of threads spawned: 3
-38 	44 	50 	56 	
-83 	98 	113 	128 	
