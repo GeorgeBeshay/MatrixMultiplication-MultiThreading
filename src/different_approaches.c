@@ -19,7 +19,7 @@ void* first_method(void* outputFileName){
     gettimeofday(&approachData->stop, NULL);
     char* finalOutputFileName = createSuitableString((char*) outputFileName, "_per_matrix");
     write_out_matrix(approachData, finalOutputFileName);
-    printf("A thread per matrix:\n\tNumber of Threads -> %d\n\tExecution time -> %ld microS\n\n", approachData->threads_count, approachData->stop.tv_usec - approachData->start.tv_usec);
+    printf("A thread per matrix:\n\tNumber of Threads -> %d\n\tExecution time in micro seconds -> %ld\n\n", approachData->threads_count, approachData->stop.tv_usec - approachData->start.tv_usec);
     // free the allocated memory for the thread data.
     free(finalOutputFileName);
     free(approachData);
@@ -37,12 +37,15 @@ void* second_method(void* outputFileName){
         pthread_create(&operationThreads[i], NULL, second_method_calcRow, (void*) &rowNums[i]);
         approachData->threads_count++;
     }
-    pthread_join(operationThreads[matSizes[4] - 1], NULL);
+    // ---------------------- Separator ----------------------
+    for(int i = 0 ; i < matSizes[4] ; i++) {
+        pthread_join(operationThreads[i], NULL);
+    }
     // ---------------------- Separator ----------------------
     gettimeofday(&approachData->stop, NULL);
     char* finalOutputFileName = createSuitableString((char*) outputFileName, "_per_row");
     write_out_matrix(approachData, finalOutputFileName);
-    printf("A thread per row:\n\tNumber of Threads -> %d\n\tExecution time -> %ld microS\n\n", approachData->threads_count, approachData->stop.tv_usec - approachData->start.tv_usec);
+    printf("A thread per row:\n\tNumber of Threads -> %d\n\tExecution time in micro seconds -> %ld\n\n", approachData->threads_count, approachData->stop.tv_usec - approachData->start.tv_usec);
     // free the allocated memory for the thread data.
     free(finalOutputFileName);
     free(approachData);
@@ -72,12 +75,17 @@ void* third_method(void* outputFileName){
             approachData->threads_count++;
         }
     }
-    pthread_join(operationThreads[matSizes[4] - 1][matSizes[5] - 1], NULL);
+    // ---------------------- Separator ----------------------
+    for(int i = 0 ; i < matSizes[4] ; i++) {
+        for (int j = 0; j < matSizes[5]; j++) {
+            pthread_join(operationThreads[i][j], NULL);
+        }
+    }
     // ---------------------- Separator ----------------------
     gettimeofday(&approachData->stop, NULL);
     char* finalOutputFileName = createSuitableString((char*) outputFileName, "_per_element");
     write_out_matrix(approachData, finalOutputFileName);
-    printf("A thread per element:\n\tNumber of Threads -> %d\n\tExecution time -> %ld microS\n\n", approachData->threads_count, approachData->stop.tv_usec - approachData->start.tv_usec);
+    printf("A thread per element:\n\tNumber of Threads -> %d\n\tExecution time in micro seconds -> %ld\n\n", approachData->threads_count, approachData->stop.tv_usec - approachData->start.tv_usec);
     // free the allocated memory for the thread data.
     free(finalOutputFileName);
     free(approachData);
