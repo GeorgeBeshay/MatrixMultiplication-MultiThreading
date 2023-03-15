@@ -7,7 +7,7 @@
 
 #include "main.h"
 
-multiplication_approach_data* malloc_for_threadData(char* methodName);
+multiplication_approach_data* malloc_for_ApproachData(char* methodName);
 void* first_method(void* outputFileName);
 void* second_method(void* outputFileName);
 void* second_method_calcRow(void* rowNum);

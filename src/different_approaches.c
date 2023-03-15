@@ -6,7 +6,7 @@
 
 
 void* first_method(void* outputFileName){
-    multiplication_approach_data * approachData = malloc_for_threadData("A Thread per matrix.");
+    multiplication_approach_data * approachData = malloc_for_ApproachData("A Thread per matrix.");
     // ---------------------- Separator ----------------------
     for(int i = 0 ; i < matSizes[4] ; i++){
         for(int j = 0 ; j < matSizes[5] ; j++){
@@ -28,7 +28,7 @@ void* first_method(void* outputFileName){
 
 void* second_method(void* outputFileName){
     // allocate memory for the thread data, and initialize the method name, starting time.
-    multiplication_approach_data * approachData = malloc_for_threadData("A Thread per row.");
+    multiplication_approach_data * approachData = malloc_for_ApproachData("A Thread per row.");
     // ---------------------- Separator ----------------------
     pthread_t operationThreads[matSizes[4]];
     int rowNums[matSizes[4]];
@@ -63,7 +63,7 @@ void* second_method_calcRow(void* rowNum){
 }
 
 void* third_method(void* outputFileName){
-    multiplication_approach_data* approachData = malloc_for_threadData("A Thread per element.");
+    multiplication_approach_data* approachData = malloc_for_ApproachData("A Thread per element.");
     // ---------------------- Separator ----------------------
     pthread_t operationThreads[matSizes[4]][matSizes[5]];
     matrix_element_location elementNums[matSizes[4]][matSizes[5]];
@@ -101,7 +101,7 @@ void* third_method_calcElem(void* elemStruct){
     return NULL;
 }
 
-multiplication_approach_data* malloc_for_threadData(char* methodName){
+multiplication_approach_data* malloc_for_ApproachData(char* methodName){
     multiplication_approach_data* threadData = (multiplication_approach_data*) malloc(sizeof(multiplication_approach_data ));
     threadData->method_name = (char*) malloc(100 * sizeof(char));
     strcpy(threadData->method_name, methodName);
